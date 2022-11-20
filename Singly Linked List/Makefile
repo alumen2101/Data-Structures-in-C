@@ -8,4 +8,4 @@ SinglyLinkedList.o: SinglyLinkedList.c SinglyLinkedList.h
 	gcc -c SinglyLinkedList.c
 
 clean:
-	del *.o output
+	del *.o output.*
