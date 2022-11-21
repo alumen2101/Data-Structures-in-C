@@ -14,9 +14,9 @@ typedef struct Queue_t {    // 12 bytes
 
 Queue_t* createQueue();     // create a queue
 
-void enqueue(Queue_t *q, int value);        // add a node to the end of the queue
-void deque(Queue_t *q);                     // delete head node
-void front(Queue_t *q);                     // print the head node value
+void enqueue(Queue_t *q, int value);       // add a node to the end of the queue
+void deque(Queue_t *q);                    // delete head node
+void peek(Queue_t *q);                     // print the head node value
 void display(Queue_t *q);                   // print all nodes value
 
 #endif  // QUEUE_H
