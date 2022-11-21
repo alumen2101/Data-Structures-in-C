@@ -68,3 +68,8 @@ void display(Queue_t *q)
     }
     printf("\n");
 }
+
+void peek(Queue_t *q)
+{
+    printf("first node value is %d\n", q->head->value);
+}
