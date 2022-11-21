@@ -1,11 +1,20 @@
 # Data-Structures-in-C
 
-### INDEX
+### Index
 - [X] Singly Linked List
-- [ ] Queue
+- [ ] Queue -- currently working on
 - [ ] Stack
-- [ ] Dynamic Array
 - [ ] Circular Linked List
+- [ ] Dynamic Array
+- [ ] Matrix
+- [ ] Binary Tree
+- [ ] Binary Search Tree
+- [ ] AVL Tree
+- [ ] B-Tree
+- [ ] Graph
+- [ ] Hashmap
+
+---
 
 Each directory has its own MakeFile
 - `make` to compile all files required
