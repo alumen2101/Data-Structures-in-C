@@ -15,6 +15,9 @@ int main()
 
     enqueue(q, 0);
     enqueue(q, 1);
+    
+    peek(q);
+
     enqueue(q, 2);
     enqueue(q, 3);
     enqueue(q, 4);
