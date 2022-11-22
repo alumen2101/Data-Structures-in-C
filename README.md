@@ -2,8 +2,8 @@
 
 ### Index
 - [X] Singly Linked List
-- [ ] Queue -- currently working on
-- [ ] Stack
+- [X] Queue
+- [X] Stack
 - [ ] Circular Linked List
 - [ ] Dynamic Array
 - [ ] Matrix
