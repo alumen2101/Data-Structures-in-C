@@ -17,7 +17,7 @@ LinkedList_t* createLinkedList();                                       // creat
 
 Node_t* returnIndexNode(LinkedList_t *linkedList, int index);           // return index passed node
 
-int insertNodeAtIndex(LinkedList_t *linkedList, int value, int index);  // creates a node at passed index
+void insertNodeAtIndex(LinkedList_t *linkedList, int value, int index);  // creates a node at passed index
 void push(LinkedList_t *linkedList, int value_i);                       // creates a node and put it in front
 void pop(LinkedList_t *linkedList);                                     // delete head node
 

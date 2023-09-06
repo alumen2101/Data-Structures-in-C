@@ -115,7 +115,7 @@ void pop(LinkedList_t *linkedList)
 }
 
 // insert a node at passed index
-int insertNodeAtIndex(LinkedList_t *linkedList, int value, int index)
+void insertNodeAtIndex(LinkedList_t *linkedList, int value, int index)
 {
     index = checkIndexInBound(linkedList->count, index);
 
