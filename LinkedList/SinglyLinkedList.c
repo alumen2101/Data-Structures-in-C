@@ -1,11 +1,15 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include "SinglyLinkedList.h"
 
 // initialize linked list
 LinkedList_t *createLinkedList()
 {
-    LinkedList_t *linkedLList = malloc(sizeof(LinkedList_t)); // create list and allocate memory
+    size_t len = sizeof(LinkedList_t);
+    LinkedList_t *linkedLList = malloc(len); // create list and allocate memory
+
+    memset(linkedLList, 0, len);
 
     linkedLList->count = 0;   // set count to 0
     linkedLList->head = NULL; // set head to null
@@ -50,7 +54,10 @@ Node_t *returnIndexNode(LinkedList_t *linkedList, int index)
 // insert node in at index 0
 void push(LinkedList_t *linkedList, int value_i)
 {
-    Node_t *node = malloc(sizeof(Node_t)); // allocate Node_t size for new node
+    size_t len = sizeof(Node_t);
+    Node_t *node = malloc(len); // allocate Node_t size for new node
+
+    memset(node, 0, len);
 
     linkedList->count += 1; // increase count of the linkedlist
 
@@ -112,7 +119,8 @@ int insertNodeAtIndex(LinkedList_t *linkedList, int value, int index)
 {
     index = checkIndexInBound(linkedList->count, index);
 
-    Node_t *node = malloc(sizeof(Node_t)); // create node and allocate memory
+    size_t len = sizeof(Node_t);
+    Node_t *node = malloc(len); // create node and allocate memory
     node->value = value;                   // set node value
 
     if (index == 0)
